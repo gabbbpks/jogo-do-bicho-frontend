@@ -1,0 +1,28 @@
+
+[
+  {
+    "horario": "08:30h",
+    "numero": "3721",
+    "grupo": "Cavalo"
+  },
+  {
+    "horario": "10:00h",
+    "numero": "1184",
+    "grupo": "Leão"
+  },
+  {
+    "horario": "12:00h",
+    "numero": "4095",
+    "grupo": "Touro"
+  },
+  {
+    "horario": "15:00h",
+    "numero": "2203",
+    "grupo": "Avestruz"
+  },
+  {
+    "horario": "18:00h",
+    "numero": "5430",
+    "grupo": "Camelo"
+  }
+]
