@@ -25,4 +25,19 @@ export default defineConfig(({ mode }) => ({
       },
     },
   },
+  // Garantir que build tem a base URL correta para a Vercel
+  base: './',
+  build: {
+    outDir: 'dist',
+    sourcemap: mode === 'development',
+    minify: mode === 'production',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+        },
+      },
+    },
+  }
 }));
+
