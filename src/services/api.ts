@@ -1,12 +1,11 @@
-
 import axios from 'axios';
 
 // Define base URL based on environment
-// For production, use the current domain (Vercel deployment)
+// For production, use the deployed backend URL
 // For development, use the proxy path
 const baseURL = import.meta.env.PROD 
-  ? '/api' // This will be served from the same domain when deployed to Vercel
-  : '/api'; // This will be proxied in development
+  ? 'https://jogo-do-bicho-backend.onrender.com' // URL fixa do backend no Render
+  : '/api'; // Este caminho será usado durante o desenvolvimento
 
 // Configure axios instance with the backend URL
 const api = axios.create({
@@ -124,3 +123,4 @@ export const pagamentosAPI = {
 };
 
 export default api;
+
